@@ -18,13 +18,13 @@
         <div class="container my-5">
             <div class="text-center mb-5">
                 <h1 class="display-4 fw-bold">Project Message Wall</h1>
-                <p class="lead text-muted">Dibuat oleh Kelompok 1</p>
+                <p class="lead text-muted">Dibuat oleh Group 3</p>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
-                <div class="col"><div class="card h-100 shadow-sm"><img src="tasya.webp" class="card-img-top" alt="Foto Tasya"><div class="card-body text-center"><h5 class="card-title">Tasya</h5><a href="tasya.messageboard.jsp" class="btn btn-primary mt-2">Lihat Message Board</a></div></div></div>
                 <div class="col"><div class="card h-100 shadow-sm"><img src="raffi.webp" class="card-img-top" alt="Foto Raffi"><div class="card-body text-center"><h5 class="card-title">Raffi</h5><a href="raffi.messageboard.jsp" class="btn btn-primary mt-2">Lihat Message Board</a></div></div></div>
                 <div class="col"><div class="card h-100 shadow-sm"><img src="kevin.webp" class="card-img-top" alt="Foto Kevin"><div class="card-body text-center"><h5 class="card-title">Kevin</h5><a href="kevin.messageboard.jsp" class="btn btn-primary mt-2">Lihat Message Board</a></div></div></div>
                 <div class="col"><div class="card h-100 shadow-sm"><img src="ridwan.webp" class="card-img-top" alt="Foto Ridwan"><div class="card-body text-center"><h5 class="card-title">Ridwan</h5><a href="ridwan.messageboard.jsp" class="btn btn-primary mt-2">Lihat Message Board</a></div></div></div>
+                <div class="col"><div class="card h-100 shadow-sm"><img src="tasya.webp" class="card-img-top" alt="Foto Tasya"><div class="card-body text-center"><h5 class="card-title">Tasya</h5><a href="tasya.messageboard.jsp" class="btn btn-primary mt-2">Lihat Message Board</a></div></div></div>
             </div>
         </div>
     </body>
