@@ -21,6 +21,6 @@
     request.setAttribute("list", messager.getList());
     request.setAttribute("pemilik", messager.getTujuan());
 
-    RequestDispatcher dispatcher = request.getRequestDispatcher("kevin.messageboard.view.jsp");
+    RequestDispatcher dispatcher = request.getRequestDispatcher("ridwan.messageboard.view.jsp");
     dispatcher.forward(request, response);
 %>

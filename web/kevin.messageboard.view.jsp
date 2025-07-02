@@ -31,16 +31,33 @@
                 <div class="card-body p-4">
                     <h4 class="mb-3">Tinggalkan Pesan</h4>
                     <form method="post" action="kevin.messageboard.jsp">
-                        <div class="mb-3"><label for="pengirim" class="form-label">Nama Anda</label><input type="text" id="pengirim" name="pengirim" class="form-control" placeholder="Tulis nama Anda di sini..." required></div>
-                        <div class="mb-3"><label for="pesan" class="form-label">Pesan Anda</label><textarea id="pesan" name="pesan" class="form-control" rows="3" placeholder="Tulis pesan Anda di sini..." required></textarea></div>
-                        <div class="d-grid"><button type="submit" class="btn btn-primary btn-lg">Kirim Pesan</button></div>
+                        <div class="mb-3">
+                            <label for="pengirim" class="form-label">Nama Anda</label>
+                            <input type="text" id="pengirim" name="pengirim" class="form-control" placeholder="Tulis nama Anda di sini..." required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan Anda</label>
+                            <textarea id="pesan" name="pesan" class="form-control" rows="3" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Kirim Pesan</button>
+                        </div>
                     </form>
                 </div>
                 <div class="card-footer bg-white p-4">
                     <h4 class="mb-3">Pesan yang Masuk</h4>
                     <div class="list-group">
                         <c:choose>
-                            <c:when test="${!empty list}"><c:forEach items="${list}" var="row"><div class="list-group-item list-group-item-action"><div class="d-flex w-100 justify-content-between"><h5 class="mb-1 text-primary">${row.pengirim}</h5></div><p class="mb-1">${row.pesan}</p></div></c:forEach></c:when>
+                            <c:when test="${!empty list}">
+                                <c:forEach items="${list}" var="row">
+                                    <div class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1 text-primary">${row.pengirim}</h5>
+                                        </div>
+                                            <p class="mb-1">${row.pesan}</p>
+                                    </div>
+                                </c:forEach>
+                            </c:when>
                             <c:otherwise><p class="text-center text-muted">Belum ada pesan. Jadilah yang pertama!</p></c:otherwise>
                         </c:choose>
                     </div>
